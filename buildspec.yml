@@ -4,16 +4,13 @@ phases:
   install:
     commands:
       - echo Download pip ...
-      - curl https://bootstrap.pypa.io/pip/3.4/get-pip.py -o get-pip.py
-      - echo Install pip ...
-      - python3 get-pip.py
-      - echo pip installed ...
-      - python3 -m pip install Flask
+      - python -m pip --version
+      - python -m pip install Flask
   build:
     commands:
       - echo Build started on `date`
       - echo Compiling the Python code...
-      - python3 test_app.py
+      - python test_app.py
   post_build:
     commands:
       - echo Build completed on `date`
