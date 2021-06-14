@@ -13,7 +13,7 @@ phases:
       - python3 get-pip.py
       - echo pip installed ...
       - echo Installed Flask ...
-      - python3 -m pip install Flask
+      - python3 -m pip install Flask requests
   build:
     commands:
       - echo Build started on `date`
